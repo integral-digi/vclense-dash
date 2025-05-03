@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import SidebarLogo from "@/public/assets/Sidebar";
+import SidebarToggle from "@/public/assets/Sidebar";
 import ThemeToggler from "./Toggler";
 
 import {
@@ -43,7 +43,7 @@ const SideNav = ({ onHide }: { onHide?: () => void }) => {
 						onClick={onHide}
 						className="h-8 w-8 cursor-pointer text-gray-700 dark:text-gray-300"
 					>
-						<SidebarLogo/>
+						<SidebarToggle/>
 					</div>
 				</div>
 

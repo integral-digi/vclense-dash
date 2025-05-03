@@ -6,18 +6,17 @@ import NewsSection from "./NewsSection";
 import PodcastSection from "./PodcastSection";
 import NewsBarChart from "./Chart";
 import dynamic from "next/dynamic";
+import { Bars2Icon } from "@heroicons/react/24/solid";
+import Nav from "@/app/components/Nav";
+import MobileNav from "@/app/components/MobileNav";
 
 const MapView = dynamic(() => import("../components/MapView"), { ssr: false });
 
 const Main = () => {
 	return (
-		<div className="w-full space-y-12 py-6 px-4 lg:px-12">
-		   <Image 
-				src="/assets/logo.svg" 
-				alt="VClense Logo" 
-				width={160} 
-				height={36} 
-			/>
+		<div className="w-full space-y-12 py-6 px-4 lg:px-12 relative">
+			<Nav />
+			<MobileNav />
 			<div className="w-full lg:w-2/3">
 				<AIChat />
 			</div>
