@@ -29,7 +29,7 @@ const MobileNav = () => {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                     >
-                        <PopoverPanel className="absolute z-10 left-0 top-0 w-3/4">
+                        <PopoverPanel className="fixed z-10 left-0 bottom-0 top-0 w-3/4 min-h-screen h-full">
                             {/* Add your dropdown items here */}
                             <SideNav />
                         </PopoverPanel>
