@@ -115,7 +115,7 @@ const MapView = () => {
                 leaveFrom="opacity-100 translate-x-0"
                 leaveTo="opacity-0 translate-x-full"
             >
-                <PopoverPanel className="fixed inset-y-0 right-0 w-4/5 p-4 bg-white dark:bg-stone-800 shadow-3xl z-50 flex flex-col">
+                <PopoverPanel className="fixed inset-y-0 right-0 w-full lg:w-4/5 p-4 bg-white dark:bg-stone-800 shadow-3xl z-50 flex flex-col">
                     {/* Embedded detailed map */}
                     <div className="flex-1 relative">
                         {/* Close button */}
