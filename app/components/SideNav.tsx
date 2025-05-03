@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -38,7 +37,7 @@ const SideNav = ({ onHide }: { onHide?: () => void }) => {
 			{/* Top */}
 			<div className="space-y-5">
 				{/* toggle icon */}
-				<div className="flex items-center justify-between">
+				<div className="w-fit hidden lg:block">
 					<div 
 						onClick={onHide}
 						className="h-8 w-8 cursor-pointer text-gray-700 dark:text-gray-300"
