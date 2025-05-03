@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 3) CSS variables for light & dark */
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 4) Base element styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--background);
+	color: var(--foreground);
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	line-height: 1.5;
 }
+
+/* 5) Tremor / Recharts SVG overrides (text + gridlines) */
+.tremor-chart svg .recharts-layer  {
+	fill: #ffffff !important;
+}
+
+.recharts-bar-rectangle {
+	fill: #ffffff !important;
+	border-radius: 12px !important;
+}
+.recharts-cartesian-axis-ticks text {
+	fill: #ffffff !important;
+}
+.tremor-chart svg text {
+	fill: #ffffff !important;
+}
+.tremor-chart svg .recharts-cartesian-grid line,
+.tremor-chart svg .recharts-cartesian-axis-line {
+	stroke: rgba(255, 255, 255, 0.3) !important;
+	stroke-dasharray: 5 5 !important;
+	stroke-width: 0.5 !important;
+	stroke-opacity: 0.5 !important;
+}
+
+recharts-tooltip {
+	background-color: #ffffff !important;
+	color: #000000 !important;
+	border-radius: 8px !important;
+	padding: 8px !important;
+}
+
+.custom-tooltip {
+	background-color: #222 !important; /* Use !important to override inline styles if needed */
+	color: #fff !important;
+	padding: 10px !important;
+	border-radius: 5px !important;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .custom-tooltip .label {
+	font-weight: bold !important;
+	margin-bottom: 5px !important;
+  }
+  
+  .custom-tooltip .desc {
+	margin: 0 !important;
+	font-size: 0.9em !important;
+  }
+
+/* 6) Your custom utilities */
+@layer utilities {
+	/* Shadow utility matching `shadow-3xl` */
+	.shadow-3xl {
+		box-shadow: 0px 15px 35px rgba(13, 21, 55, 0.08);
+	}
+
+	/* Hide scrollbars */
+	.scrollbar-hide {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+}
+
