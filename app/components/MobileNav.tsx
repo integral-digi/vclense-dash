@@ -17,7 +17,7 @@ const MobileNav = () => {
                     height={36} 
                 />
                 <Popover className="w-fit">
-                    <PopoverButton className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-stone-800 hover:bg-gray-300 dark:hover:bg-stone-700 focus-outline-none transition">
+                    <PopoverButton className="flex items-center justify-center w-10 h-10 dark:bg-stone-800 hover:bg-gray-300 dark:hover:bg-stone-700 focus-outline-none transition">
                         <Bars2Icon className="h-8 w-8 text-gray-500 dark:text-white" />
                     </PopoverButton>
                     <Transition
