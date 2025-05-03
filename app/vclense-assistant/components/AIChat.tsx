@@ -17,11 +17,11 @@ const AIChat = () => {
     return (
         <div className="flex flex-col w-full h-full space-y-4">
             <div className="flex items-center justify-between">
-                <h1 className="text-3xl font-bold text-gray-700 dark:text-white">
+                <h1 className="text-xl md:text-3xl font-bold text-gray-700 dark:text-white">
                     {aiItems.title}
                 </h1>
             </div>
-            <p className="text-3xl font-bold text-gray-500">
+            <p className="text-xl md:text-3xl font-bold text-gray-500">
                 {aiItems.description}
             </p>
             <div className="w-full relative">
