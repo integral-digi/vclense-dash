@@ -34,11 +34,11 @@ const NewsBarChart = () => {
 		// map to our chart data
 		const chartData = months.map((m) => {
 			const label = m.toLocaleString("default", { month: "short" });
-			const count = newsData.articles.filter((a) => {
+			const news = newsData.articles.filter((a) => {
 				const d = new Date(a.publishedAt);
 				return d.getFullYear() === m.getFullYear() && d.getMonth() === m.getMonth();
 			}).length;
-			return { date: label, count };
+			return { date: label, news };
 		});
 
 		const startLabel = months[0].toLocaleString("default", { month: "short" }) + " " + months[0].getFullYear();
@@ -62,7 +62,7 @@ const NewsBarChart = () => {
 			<BarChart
 				data={data}
 				index="date"
-				categories={["count"]}
+				categories={["news"]}
 				colors={["#FFFFFF"]}      
 				valueFormatter={valueFormatter}
 				showYAxis={false}

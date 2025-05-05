@@ -26,9 +26,9 @@ const AIChat = () => {
             </p>
             <div className="w-full relative">
                 <textarea
-                    rows={4}
+                    rows={2}
                     placeholder={aiItems.placeholder}
-                    className="w-full p-6 dark:text-white bg-white dark:bg-stone-800 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:ring-blue-500"
+                    className="w-full p-6 dark:text-white bg-white dark:bg-stone-800 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
                 ></textarea>
                 <button className="absolute right-4 bottom-4 bg-neutral-200/50 text-white rounded-full p-2 hover:bg-blue-300">
                     <ArrowUpIcon className="w-4 h-4 text-gray-500 dark:text-white" />
@@ -41,7 +41,7 @@ const AIChat = () => {
                         href={link.action} 
                         className="text-gray-500 dark:text-whiteno-underline"
                     >
-                        <div className="hover:bg-blue-100 px-2 py-1 flex items-center space-x-8 bg-neutral-200/50  dark:bg-stone-900 rounded-full">
+                        <div className="hover:bg-blue-100 dark:hover:bg-zinc-800 px-2 py-1 flex items-center space-x-8 bg-neutral-200/50  dark:bg-stone-900 rounded-full">
                             <p className="text-gray-700 dark:text-white font-bold text-sm text-nowrap">
                                 {link.label}
                             </p>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Public_Sans  } from "next/font/google";
+import { Inter, Public_Sans  } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from "@/context/DarkModeContext";
 
-const roboto = Public_Sans({
+const roboto = Inter({
 	variable: "--font-roboto",
 	subsets: ["latin"],
 });
