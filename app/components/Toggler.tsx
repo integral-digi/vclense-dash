@@ -24,17 +24,17 @@ const ThemeToggler: React.FC = () => {
 			className="
 				flex items-center space-x-2
 				text-neutral-600 hover:text-neutral-800
-				dark:text-neutral-300 dark:hover:text-neutral-100
+				dark:text-neutral-300 dark:hover:text-white
 				transition-colors
 				cursor-pointer
 			"
 		>
 			{darkMode ? (
-				<SunIcon className="h-5 w-5 text-neutral-500" />
+				<SunIcon className="h-5 w-5 text-neutral-500 " />
 			) : (
 				<MoonIcon className="h-5 w-5 text-neutral-500" />
 			)}
-			<span className="text-sm font-medium  text-neutral-500  hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200">
+			<span className="text-sm font-medium  text-neutral-500 dark:text-neutral-400">
 				{darkMode ? "Light Mode" : "Dark Mode"}
 			</span>
 		</button>
