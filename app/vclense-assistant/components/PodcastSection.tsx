@@ -59,7 +59,7 @@ const PodcastSection = () => {
 								{episode.title}
 							</h3>
 
-							<p className="text-gray-500 dark:text-whitetext-xs">
+							<p className="text-gray-500 dark:text-white text-xs">
 								{episode.host} — {formatDate(episode.release)}
 							</p>
 

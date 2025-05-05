@@ -30,11 +30,11 @@ const ThemeToggler: React.FC = () => {
 			"
 		>
 			{darkMode ? (
-				<SunIcon className="h-5 w-5 text-neutral-500 " />
+				<SunIcon className="h-5 w-5 text-neutral-500 dark:hover:text-white" />
 			) : (
 				<MoonIcon className="h-5 w-5 text-neutral-500" />
 			)}
-			<span className="text-sm font-medium  text-neutral-500 dark:text-neutral-400">
+			<span className="text-sm font-medium text-neutral-500 dark:text-white">
 				{darkMode ? "Light Mode" : "Dark Mode"}
 			</span>
 		</button>
