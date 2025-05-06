@@ -23,18 +23,18 @@ const ThemeToggler: React.FC = () => {
 			aria-pressed={darkMode}
 			className="
 				flex items-center space-x-2
-				text-neutral-600 hover:text-neutral-800
-				dark:text-neutral-300 dark:hover:text-white
+				text-neutral-400 hover:text-neutral-800
+				dark:hover:text-white
 				transition-colors
 				cursor-pointer
 			"
 		>
 			{darkMode ? (
-				<SunIcon className="h-5 w-5 text-neutral-500 dark:hover:text-white" />
+				<SunIcon className="h-5 w-5 text-neutral-400" />
 			) : (
-				<MoonIcon className="h-5 w-5 text-neutral-500" />
+				<MoonIcon className="h-5 w-5 text-neutral-400" />
 			)}
-			<span className="text-sm font-medium text-neutral-500 dark:text-white">
+			<span className="text-sm font-medium">
 				{darkMode ? "Light Mode" : "Dark Mode"}
 			</span>
 		</button>

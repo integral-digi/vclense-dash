@@ -86,7 +86,7 @@ const EventsSection = () => {
 							<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
 								<div className="space-y-1">
 									<h3 className="text-base text-gray-700 dark:text-white font-semibold">{event.title}</h3>
-									<p className="text-gray-500 dark:text-white text-xs">{formatDate(event.date)}</p>
+									<p className="text-gray-500 dark:text-white text-xs">{event.location} - {formatDate(event.date)}</p>
 								</div>
 								<button
 									className="bg-blue-500 text-white rounded-md px-4 py-2 text-sm font-semibold hover:bg-blue-600 transition"

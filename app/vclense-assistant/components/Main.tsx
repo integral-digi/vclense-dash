@@ -27,16 +27,15 @@ const Main = () => {
 						<MapView />
 					</div>
 				</div>
-				<div className="w-full lg:w-[32%] space-y-6">
+				<div className="w-full lg:w-[32%] space-y-6">	
+					<div className="w-full bg-[#5172aa] rounded-lg shadow-3xl"> 
+						<NewsBarChart />
+					</div>
 					<div className="w-full bg-white dark:bg-stone-800 rounded-lg shadow-3xl"> 
 						<PodcastSection />
 					</div>
 					<div className="w-full bg-white dark:bg-stone-800 rounded-lg shadow-3xl"> 
 						<EventsSection />
-					</div>
-
-					<div className="w-full bg-[#5172aa] rounded-lg shadow-3xl"> 
-						<NewsBarChart />
 					</div>
 				</div>
 			</div>

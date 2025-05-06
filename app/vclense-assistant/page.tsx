@@ -15,7 +15,7 @@ const AssistantPage = () => {
 		<div className="flex min-h-screen bg-stone-50 dark:bg-stone-800">
 			{/* Sidebar */}
 			{isSidebarVisible ? (
-				<aside className="hidden lg:flex flex-col w-1/5 bg-white dark:bg-stone-800 fixed h-full">
+				<aside className="hidden lg:flex flex-col w-[18%] bg-white dark:bg-stone-800 fixed h-full">
 					<SideNav onHide={handleHideSidebar} />
 				</aside>
 			) : (
@@ -30,7 +30,7 @@ const AssistantPage = () => {
 			)}
 
 			{/* Spacer for fixed sidebar */}
-			<div className={`hidden lg:block ${!isSidebarVisible ? 'lg:w-24' : 'lg:w-1/5'}`} />
+			<div className={`hidden lg:block ${!isSidebarVisible ? 'lg:w-24' : 'lg:w-[18%]'}`} />
 
 			{/* Main content */}
 			<main className="flex-1 w-full">
