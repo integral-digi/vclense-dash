@@ -88,7 +88,7 @@ const SortByCategory = ({
 						leaveFrom="opacity-100 scale-100"
 						leaveTo="opacity-0 scale-95"
 					>
-						<MenuItems className="absolute right-0 mt-1 w-40 bg-white border rounded shadow-lg z-10">
+						<MenuItems className="absolute right-0 mt-1 w-40 bg-white rounded shadow-3xl z-10">
 							{otherCats.map((cat) => (
 								<MenuItem key={cat}>
 									{({ focus }) => (
