@@ -145,7 +145,7 @@ const MapView: React.FC = () => {
         <Popover className="relative">
             <div
                 ref={containerRef}
-                className="relative w-full h-80 rounded-lg overflow-hidden"
+                className="relative w-full h-80 rounded-lg overflow-hidden z-0"
             />
 
             <div className="absolute top-4 left-12 z-10 bg-white dark:bg-stone-800 p-2 rounded-full shadow">
